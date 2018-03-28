@@ -21,10 +21,10 @@ $ sudo cat motd >> /etc/motd
 will attach the file to the actual motd - message of the day - which is shown on login. It is holding every "alias" which is written in .bash_aliases
 
 ## installing teamviewer on headless raspberry pi/raspbian/jessie
-1 download the package for "Debian, Ubuntu, Raspbian" arm at https://www.teamviewer.com/de/download/linux/
-2 sudo dpkg -i <teamviewer_dfjke.deb>
-3 sudo apt update
-4 sudo apt install -f
-5 teamviewer info
-6 sudo teamviewer setup
+1. download the package for "Debian, Ubuntu, Raspbian" arm at https://www.teamviewer.com/de/download/linux/
+2. sudo dpkg -i <teamviewer_dfjke.deb>
+3. sudo apt update
+4. sudo apt install -f
+5. teamviewer info
+6. sudo teamviewer setup
 (source: https://www.techrrival.com/install-teamviewer-raspberry-pi/)
