@@ -10,7 +10,7 @@ USER="<user>"
 MAC="<mac-address>"
 
 function USAGE {
-    echo *** ssh into RPi without its IP in the same subnet (due to set through DHCP from WIFI) - by its Mac
+    echo "*** ssh into RPi without its IP in the same subnet (due to set through DHCP from WIFI) - by its Mac"
     echo "Option \"help\""
     echo "usage: $ $0 -fh"
     echo "-f: force - needs 'sudo'"
@@ -157,6 +157,7 @@ then
 fi
     
 echo IP=$IP
+echo $USER@$IP
 ssh $USER@$IP   
 
 exit 0
