@@ -1,0 +1,5 @@
+# /etc/motd
+Aliases:
+pubip - get public ip
+gwsvcstat - get status of gateway service
+showlog - show gateway service logs
