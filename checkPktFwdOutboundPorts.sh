@@ -1,6 +1,5 @@
 #!/bin/bash
 # check if the needed ports for the packet_forwarder are open in the outbound direction
-#!/bin/bash
 ret=0
 curl_output=$(curl -s portquiz.net:123 --max-time 3 >NUL)
 if [ $? -ne 0 ]; then
