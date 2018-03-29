@@ -20,7 +20,8 @@ is holding the aliases/shortcuts for simply managing the gateway - which are sho
 $ sudo cat motd >> /etc/motd
 will attach the file to the actual motd - message of the day - which is shown on login. It is holding every "alias" which is written in .bash_aliases
 
-## installing teamviewer on headless raspberry pi/raspbian/jessie
+## installing teamviewer on headless raspberry pi/raspbian/jessie 
+raspberry pi >=v2 armv7 needed - v1/imst's lora lite gw not possible
 1. download the package for "Debian, Ubuntu, Raspbian" arm at https://www.teamviewer.com/de/download/linux/
 2. sudo dpkg -i <teamviewer_dfjke.deb>
 3. sudo apt update
