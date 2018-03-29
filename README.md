@@ -13,6 +13,9 @@ backup and restore SD cards and mount partitions from imagefiles in Linux as wel
 ## getMyPublicIP.sh
 return public ip  
 
+## checkPktFwdOutboundPorts.sh
+check if the required outbound ports are open  
+  
 ## .bash_aliases
 is holding the aliases/shortcuts for simply managing the gateway - which are shown through the motd - message of the day at login
 
