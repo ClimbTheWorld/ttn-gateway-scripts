@@ -32,3 +32,9 @@ raspberry pi >=v2 armv7 needed - v1/imst's lora lite gw not possible
 5. teamviewer info
 6. sudo teamviewer setup
 (source: https://www.techrrival.com/install-teamviewer-raspberry-pi/)
+
+### enlarge remote screen size
+
+
+## /etc/wpa_supplicant/wpa_supplicant.conf
+to automatically connect to a mobile phone hotspot as soon as available
