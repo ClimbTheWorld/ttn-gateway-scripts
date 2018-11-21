@@ -48,12 +48,12 @@ get a gateway status in json format
 curl http://noc.thethingsnetwork.org:8085/api/v2/gateways/piznairuno
 
 ### script
-gwid=$(curl http://noc.thethingsnetwork.org:8085/api/v2/gateways/gwid | jq -r '.timestamp')
-if [ "null" -eq "$gwid" ]; then 
-    echo "not online"
-else
-    echo "is online"
-fi
+gwid=$(curl http://noc.thethingsnetwork.org:8085/api/v2/gateways/gwid | jq -r '.timestamp')  
+if [ "null" -eq "$gwid" ]; then   
+    echo "not online"  
+else  
+    echo "is online"  
+fi  
 ### online status
 {"timestamp":"2018-11-21T22:18:08.043272260Z","uplink":"3840528","downlink":"841564","location":{"latitude":47.03804,"longitude":8.29894,"altitude":455},"frequency_plan":"EU_863_870","platform":"IMST + Rpi","gps":{"latitude":47.03804,"longitude":8.29894,"altitude":455},"time":"1542838688043272260","rx_ok":3840528,"tx_in":841564}
 ### offline status
