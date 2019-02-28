@@ -1,14 +1,25 @@
 # README dd
 Lukas, ASMON, 15.11.2017
 
-
-## dd harddisk to zipped image
+## dd and pishrinkb(https://linuxundich.de/raspberry-pi/pishrink-verkleinert-raspberry-pi-images/)
+### Help to call PiShrink:
+$ pishrink.sh
+Usage: /home/toff/bin/pishrink.sh [-s] imagefile.img [newimagefile.img]
+### shrink available RasPi-Image:
+$ sudo pishrink.sh raspberry-pi.img
+### shrink available image and remain the original:
+$ sudo pishrink.sh raspberry-pi.img raspberry-pi_pishrink.img
+### deactivate auto-resize of the image:
+$ sudo pishrink.sh -s raspberry-pi.img raspberry-pi_klein.img
+  
+## dd and zipped image
+### dd harddisk to zipped image
 $ sudo dd if=/dev/sdXY | pv | gzip --best +sdXY.img.gz  
 $ sudo dd if=/dev/sdb bs=1M status=progress conv=sync |pv|gzip --best >loraGW_$(date +%F).gz  
 
 
 
-## dd zipped image to harddisk
+### dd zipped image to harddisk
 $ sudo gunzip <sdXY.img.gz | pv | sudo  dd of=/dev/sdb bs=1M   
 
 
