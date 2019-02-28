@@ -1,7 +1,8 @@
 # README dd
 Lukas, ASMON, 15.11.2017
 
-## dd and pishrinkb(https://linuxundich.de/raspberry-pi/pishrink-verkleinert-raspberry-pi-images/)
+## dd and pishrinkb
+(Source: https://linuxundich.de/raspberry-pi/pishrink-verkleinert-raspberry-pi-images/)
 ### Help to call PiShrink:
 $ pishrink.sh
 Usage: /home/toff/bin/pishrink.sh [-s] imagefile.img [newimagefile.img]
