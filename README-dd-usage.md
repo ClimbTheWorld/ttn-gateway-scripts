@@ -1,6 +1,10 @@
 # README dd
 Lukas, ASMON, 15.11.2017
 
+## do it better respect the following
+* don't use the SD card reader of the laptop(mostly not connected through a fast interface). Use a usb card reader instead.
+* connect the usb card reader directly to the laptop not through an usb-hub
+* use the bs= specifier in the output dd -> dd if=imagefile |pv| sudo dd of=/dev/sdx bs=30M conv=sync
 ## dd and pishrinkb
 (Source: https://linuxundich.de/raspberry-pi/pishrink-verkleinert-raspberry-pi-images/)
 ### Help to call PiShrink:
@@ -16,12 +20,12 @@ $ sudo pishrink.sh -s raspberry-pi.img raspberry-pi_klein.img
 ## dd and zipped image
 ### dd harddisk to zipped image
 $ sudo dd if=/dev/sdXY | pv | gzip --best +sdXY.img.gz  
-$ sudo dd if=/dev/sdb bs=1M status=progress conv=sync |pv|gzip --best >loraGW_$(date +%F).gz  
+$ sudo dd if=/dev/sdb bs=30MM status=progress conv=sync |pv|gzip --best >loraGW_$(date +%F).gz  
 
 
 
 ### dd zipped image to harddisk
-$ sudo gunzip <sdXY.img.gz | pv | sudo  dd of=/dev/sdb bs=1M   
+$ sudo gunzip <sdXY.img.gz | pv | sudo  dd of=/dev/sdb bs=30M   
 
 
 ## mounting harddisk image files 
